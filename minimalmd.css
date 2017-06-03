@@ -1,0 +1,57 @@
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+
+
+/*Tabelas */
+table, th, td {
+  border: none;
+}
+
+table {
+  width: 100%;
+  display: table;
+}
+
+table.borda > thead > tr,
+table.borda > tbody > tr {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+table.zebrado > tbody > tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+table.zebrado > tbody > tr > td {
+  border-radius: 0;
+}
+
+table.highlight > tbody > tr {
+  transition: background-color .25s ease;
+}
+
+table.highlight > tbody > tr:hover {
+  background-color: #f2f2f2;
+}
+
+table.centered thead tr th, table.centered tbody tr td {
+  text-align: center;
+}
+
+thead {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+td, th {
+  padding: 15px 5px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+ 
+}
