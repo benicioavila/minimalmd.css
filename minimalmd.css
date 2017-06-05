@@ -52,6 +52,8 @@ img, video, iframe{
 }
 
 
+
+
 /*Tabelas */
 table, th, td {
   border: none;
@@ -202,10 +204,6 @@ nav ul li {
   text-decoration: none;
 }
 
-nav ul li.active {
-  background-color: rgba(0, 0, 0, 0.1);
-}
-
 nav ul a {
   transition: background-color .3s;
   font-size: 1rem;
@@ -218,6 +216,10 @@ nav ul a {
   text-decoration: none;
 }
 
+.cor h1
+{
+color: #303F9F
+}
 
 nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -227,28 +229,43 @@ nav ul.left {
   float: left;
 }
 
+/*Grids*/
+div{
+  box-sizing: border-box;
+}
+
+.container{
+  padding:0 10px;
+}
+.row{
+  margin-left:-10px;
+  margin-right:-10px;
+}
+
+@media screen and (min-width: 1024px){
+  .col-1{ float:left;width:16.6666666666667%;padding-left:10px;padding-right:10px;}
+  .col-2{ float:left;width:33.3333333333333%;padding-left:10px;padding-right:10px;}
+  .col-3{ float:left;width:50%;padding-left:10px;padding-right:10px;}
+  .col-4{ float:left;width:66.6666666666667%;padding-left:10px;padding-right:10px;}
+  .col-5{ float:left;width:83.3333333333333%;padding-left:10px;padding-right:10px;}
+  .col-6{ float:left;width:100%;padding-left:10px;padding-right:10px;}
+}
+
+@media screen and (max-width: 1024px){
+  .col-1{ float:left;width:25%;padding-left:10px;padding-right:10px;}
+  .col-2{ float:left;width:50%;padding-left:10px;padding-right:10px;}
+  .col-3{ float:left;width:75%;padding-left:10px;padding-right:10px;}
+  .col-4{ float:left;width:100%;padding-left:10px;padding-right:10px;}
+  .col-5{ float:left;width:100%;padding-left:10px;padding-right:10px;}
+  .col-6{ float:left;width:100%;padding-left:10px;padding-right:10px;}
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width: 320px){
+  .col-1{ float:left;width:100%;padding-left:10px;padding-right:10px;}
+  .col-2{ float:left;width:100%;padding-left:10px;padding-right:10px;}
+  .col-3{ float:left;width:100%;padding-left:10px;padding-right:10px;}
+  .col-4{ float:left;width:100%;padding-left:10px;padding-right:10px;}
+  .col-5{ float:left;width:100%;padding-left:10px;padding-right:10px;}
+  .col-6{ float:left;width:100%;padding-left:10px;padding-right:10px;}
+}
