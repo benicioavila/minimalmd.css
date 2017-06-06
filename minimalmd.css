@@ -216,10 +216,6 @@ nav ul a {
   text-decoration: none;
 }
 
-.cor h1
-{
-color: #303F9F
-}
 
 nav ul a:hover {
   background-color: rgba(0, 0, 0, 0.1);
@@ -228,6 +224,10 @@ nav ul a:hover {
 nav ul.left {
   float: left;
 }
+
+
+
+
 
 /*Grids*/
 div{
